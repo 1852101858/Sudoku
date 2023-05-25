@@ -18,11 +18,12 @@ public class Window extends JFrame {
     private void init() {
         add(gameBody, BorderLayout.CENTER);
         add(toolBar, BorderLayout.PAGE_END);
-        setTitle("Sudoku");
+        setTitle("数独");
         setSize(550, 650);
         setResizable(false);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
+        setLocationRelativeTo(null);
     }
     
     public void stop() {
